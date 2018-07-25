@@ -59,6 +59,16 @@ namespace AssetImporterExtension
 			return typeof(SketchUpImporter);
 		}
 		
+		
+		public void OnPostprocess (string assetPath, Property[] properties)
+		{
+		}
+		
+		
+		public void OnRemoveprocess (string assetPath, Property[] properties)
+		{
+		}
+		
 		public void Apply (AssetImporter originalImporter, string assetPath, Property[] properties)
 		{
 			SketchUpImporter importer = (SketchUpImporter)originalImporter;

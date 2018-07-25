@@ -24,6 +24,16 @@ namespace AssetImporterExtension
 			return typeof(VideoClipImporter);
 		}
 		
+		
+		public void OnPostprocess (string assetPath, Property[] properties)
+		{
+		}
+		
+		
+		public void OnRemoveprocess (string assetPath, Property[] properties)
+		{
+		}
+		
 		public void Apply (AssetImporter originalImporter, string assetPath, Property[] properties)
 		{
 			VideoClipImporter importer = (VideoClipImporter)originalImporter;

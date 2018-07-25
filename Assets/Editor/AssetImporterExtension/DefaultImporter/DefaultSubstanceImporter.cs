@@ -16,6 +16,16 @@ namespace AssetImporterExtension
 			return typeof(SubstanceImporter);
 		}
 		
+		
+		public void OnPostprocess (string assetPath, Property[] properties)
+		{
+		}
+		
+		
+		public void OnRemoveprocess (string assetPath, Property[] properties)
+		{
+		}
+		
 		public void Apply (AssetImporter originalImporter, string assetPath, Property[] properties)
 		{
 			SubstanceImporter importer = (SubstanceImporter)originalImporter;

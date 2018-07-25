@@ -89,6 +89,21 @@ namespace AssetImporterExtension
 			output.AppendLine ("\t\t}");
 			output.AppendLine ("\t\t");
 
+			// OnPostprocess関数定義
+			output.AppendLine ("\t\t");
+			output.AppendLine ("\t\tpublic void OnPostprocess (string assetPath, Property[] properties)");
+			output.AppendLine ("\t\t{");
+			output.AppendLine ("\t\t}");
+			output.AppendLine ("\t\t");
+
+			// OnPostprocessAllAssets関数定義
+			output.AppendLine ("\t\t");
+			output.AppendLine ("\t\tpublic void OnRemoveprocess (string assetPath, Property[] properties)");
+			output.AppendLine ("\t\t{");
+			output.AppendLine ("\t\t}");
+			output.AppendLine ("\t\t");
+
+
 			// Apply関数定義
 			output.AppendLine ("\t\tpublic void Apply (AssetImporter originalImporter, string assetPath, Property[] properties)");
 			output.AppendLine ("\t\t{");

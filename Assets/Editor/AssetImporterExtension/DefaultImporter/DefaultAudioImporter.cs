@@ -20,6 +20,16 @@ namespace AssetImporterExtension
 			return typeof(AudioImporter);
 		}
 		
+		
+		public void OnPostprocess (string assetPath, Property[] properties)
+		{
+		}
+		
+		
+		public void OnRemoveprocess (string assetPath, Property[] properties)
+		{
+		}
+		
 		public void Apply (AssetImporter originalImporter, string assetPath, Property[] properties)
 		{
 			AudioImporter importer = (AudioImporter)originalImporter;

@@ -16,6 +16,16 @@ namespace AssetImporterExtension
 			return typeof(MonoImporter);
 		}
 		
+		
+		public void OnPostprocess (string assetPath, Property[] properties)
+		{
+		}
+		
+		
+		public void OnRemoveprocess (string assetPath, Property[] properties)
+		{
+		}
+		
 		public void Apply (AssetImporter originalImporter, string assetPath, Property[] properties)
 		{
 			MonoImporter importer = (MonoImporter)originalImporter;

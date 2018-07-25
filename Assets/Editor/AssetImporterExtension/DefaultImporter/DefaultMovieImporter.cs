@@ -18,6 +18,16 @@ namespace AssetImporterExtension
 			return typeof(MovieImporter);
 		}
 		
+		
+		public void OnPostprocess (string assetPath, Property[] properties)
+		{
+		}
+		
+		
+		public void OnRemoveprocess (string assetPath, Property[] properties)
+		{
+		}
+		
 		public void Apply (AssetImporter originalImporter, string assetPath, Property[] properties)
 		{
 			MovieImporter importer = (MovieImporter)originalImporter;

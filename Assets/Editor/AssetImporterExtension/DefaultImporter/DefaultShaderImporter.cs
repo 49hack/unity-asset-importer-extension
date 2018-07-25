@@ -16,6 +16,16 @@ namespace AssetImporterExtension
 			return typeof(ShaderImporter);
 		}
 		
+		
+		public void OnPostprocess (string assetPath, Property[] properties)
+		{
+		}
+		
+		
+		public void OnRemoveprocess (string assetPath, Property[] properties)
+		{
+		}
+		
 		public void Apply (AssetImporter originalImporter, string assetPath, Property[] properties)
 		{
 			ShaderImporter importer = (ShaderImporter)originalImporter;

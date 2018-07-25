@@ -22,6 +22,16 @@ namespace AssetImporterExtension
 			return typeof(IHVImageFormatImporter);
 		}
 		
+		
+		public void OnPostprocess (string assetPath, Property[] properties)
+		{
+		}
+		
+		
+		public void OnRemoveprocess (string assetPath, Property[] properties)
+		{
+		}
+		
 		public void Apply (AssetImporter originalImporter, string assetPath, Property[] properties)
 		{
 			IHVImageFormatImporter importer = (IHVImageFormatImporter)originalImporter;
